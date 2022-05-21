@@ -41,14 +41,14 @@ window.onload = function () {
         contexto.fillStyle = "black";//cor do fundo
         contexto.fillRect(0, 0, stage.width, stage.height);
 
-        contexto.fillStyle = "red";//Pinta o food
+        contexto.fillStyle = "yellow";//Pinta o food
         contexto.fillRect(foodX * tamanhoPonto, foodY * tamanhoPonto, tamanhoPonto, tamanhoPonto);
 
         contexto.fillStyle = "white";//cor da cobra
 
         for (var i = 0; i < trail.length; i++) {//Rastro utilizado para colisões. deve deslizar conforme a cobra anda
 
-            contexto.fillRect(trail[i].x * tamanhoPonto, trail[i].y * tamanhoPonto, tamanhoPonto-3, tamanhoPonto-3); //-3 é o margin
+            contexto.fillRect(trail[i].x * tamanhoPonto, trail[i].y * tamanhoPonto, tamanhoPonto - 3, tamanhoPonto - 3); //-3 é o margin
 
             if (trail[i].x == pontoX && trail[i].y == pontoY) {//Ser cabeça colidir com a calda
 
@@ -68,16 +68,19 @@ window.onload = function () {
         var multiplier = 3;
 
         if (foodX == pontoX && foodY == pontoY) {//Se pegar o food
-            
-            if(score){
-                score+=trail.length*multiplier;  
-            }
-            score++; 
+
+            atualizarScore();
+
+            score += trail.length * multiplier;
             tail++;
             console.log(score);
             foodX = Math.floor(Math.random() * pontosX);
             foodY = Math.floor(Math.random() * pontosY);
         }
+    }
+
+    function atualizarScore() {
+        document.getElementById("scoreText").innerHTML = score;
     }
 
     function keyPush(event) {//Evento dos botões
