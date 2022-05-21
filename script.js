@@ -16,7 +16,9 @@ window.onload = function () {
     var foodX = foodY = 15;
 
     var trail = [];
-    tail = 5;
+    tail = 1;
+
+    var score = 0;
 
     function game() {
 
@@ -44,25 +46,35 @@ window.onload = function () {
 
         contexto.fillStyle = "white";//cor da cobra
 
-        for (var i = 0; i < trail.length; i++) {
+        for (var i = 0; i < trail.length; i++) {//Rastro utilizado para colisões. deve deslizar conforme a cobra anda
 
             contexto.fillRect(trail[i].x * tamanhoPonto, trail[i].y * tamanhoPonto, tamanhoPonto-3, tamanhoPonto-3); //-3 é o margin
 
             if (trail[i].x == pontoX && trail[i].y == pontoY) {//Ser cabeça colidir com a calda
 
                 velocidadeX = velocidadeY = 0; //Tá feio era bom jogar um warn(tratar)
-                tail = 5;
+                alert("Voce perdeu!");
+                tail = 1;
             }
 
         }
         //criou o array e substituiu
         trail.push({ x: pontoX, y: pontoY }); //SE não colidir o jogo continua
 
-        while (trail.lenght > tail) {// se a trilha estiver maior que a calda
-            trail.shift();//Tira o primeiro elemento do array         
+        while (trail.length > tail) {// se a trilha estiver maior que a calda
+            trail.shift();//Remove o ultimo bloco e acrescenta um à frente         
         }
-        if (foodX == pontoX && foodY == pontoY) {
+
+        var multiplier = 3;
+
+        if (foodX == pontoX && foodY == pontoY) {//Se pegar o food
+            
+            if(score){
+                score+=trail.length*multiplier;  
+            }
+            score++; 
             tail++;
+            console.log(score);
             foodX = Math.floor(Math.random() * pontosX);
             foodY = Math.floor(Math.random() * pontosY);
         }
@@ -91,5 +103,4 @@ window.onload = function () {
                 break;
         }
     }
-
 }
