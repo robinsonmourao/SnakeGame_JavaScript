@@ -19,6 +19,7 @@ window.onload = function () {
     tail = 1;
 
     var score = 0;
+    var multiplier = 3;
 
     function game() {
 
@@ -65,22 +66,23 @@ window.onload = function () {
             trail.shift();//Remove o ultimo bloco e acrescenta um à frente         
         }
 
-        var multiplier = 3;
-
-        if (foodX == pontoX && foodY == pontoY) {//Se pegar o food
-
-            atualizarScore();
-
-            score += trail.length * multiplier;
+        if (foodX == pontoX && foodY == pontoY) {//Se pegar o food   
+            
             tail++;
-            console.log(score);
             foodX = Math.floor(Math.random() * pontosX);
             foodY = Math.floor(Math.random() * pontosY);
+            
+            score += trail.length * multiplier;
+            console.log(score);
+            atualizarScore();
         }
     }
+    
 
-    function atualizarScore() {
+    function atualizarScore() {        
+        
         document.getElementById("scoreText").innerHTML = score;
+        
     }
 
     function keyPush(event) {//Evento dos botões

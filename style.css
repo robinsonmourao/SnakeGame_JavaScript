@@ -1,29 +1,31 @@
 
 *{
     margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
     padding: 0;
+    border-radius: 10px;
     text-align: center;
+    font-weight: 900;
 }
 .fundo{
     display: flex;
-    width: 600px;
-    height: 400px;
-    background-color: aquamarine;
+    width: 630px;
+    height: 420px;
+    background-color:lightcoral;
 }
 .fundoRightSide{
     display: flex;
     flex-direction: column;
 }
 .score{
-    color:rgb(255, 0, 0);
-    background-color: rgb(192, 192, 192);
+    color:white;
+    background-color: green;
     width: 200px;
-}
-.scoreText{
-    background-color: rgb(192, 192, 192);
+    height: auto;
 }
 .records{    
     flex: 1;/*pega o restante da tela*/
-    color: brown;    
-    background-color: rgb(253, 8, 8);    
+    color: white;    
+    background-color: red;    
 }
