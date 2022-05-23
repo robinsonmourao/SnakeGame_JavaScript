@@ -1,17 +1,17 @@
 
 *{
     margin: 0;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 1px;
+    margin-left: 1px;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 2px;
     text-align: center;
     font-weight: 900;
 }
 .fundo{
     display: flex;
-    width: 630px;
-    height: 420px;
+    position: absolute;
+    height: inherit;
     background-color:lightcoral;
 }
 .fundoRightSide{
@@ -21,11 +21,16 @@
 .score{
     color:white;
     background-color: green;
-    width: 200px;
-    height: auto;
 }
 .records{    
     flex: 1;/*pega o restante da tela*/
+
+    display: flex;
+    flex-direction: column;
     color: white;    
     background-color: red;    
+}
+.recordInput{
+    /*max-width: 10px;
+    text-align: right;*/
 }

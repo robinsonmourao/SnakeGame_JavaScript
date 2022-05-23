@@ -4,15 +4,13 @@ window.onload = function () {
 
     setInterval(game, 200);
 
-    document.addEventListener("keydown", keyPush);
+    document.addEventListener("keydown", keyPush);//Adiciona evento de tecla
 
-    const velocidade = 1;
+    const velocidade = 1;    
     var velocidadeX = velocidadeY = 0;
 
     var pontoX = pontoY = 10;//Cabeça da cobra
-
     var tamanhoPonto = pontosX = pontosY = 20;
-
     var foodX = foodY = 15;
 
     var trail = [];
@@ -67,22 +65,19 @@ window.onload = function () {
         }
 
         if (foodX == pontoX && foodY == pontoY) {//Se pegar o food   
-            
+
             tail++;
             foodX = Math.floor(Math.random() * pontosX);
             foodY = Math.floor(Math.random() * pontosY);
-            
-            score += trail.length * multiplier;
-            console.log(score);
+
             atualizarScore();
         }
     }
-    
 
-    function atualizarScore() {        
-        
+    function atualizarScore() {
+
+        score += trail.length * multiplier;
         document.getElementById("scoreText").innerHTML = score;
-        
     }
 
     function keyPush(event) {//Evento dos botões
