@@ -31,7 +31,7 @@ Você precisa fazer download do código [.ZIP](https://github.com/robinsonmourao
 - [PENDENTE] Informação de perda de partida não salva nome e pontuação de jogador;
 - [PENDENTE] inputText de Records, mal alinhada;
 - [PENDENTE] Controle por W, A, S, D;
-- [PENDENTE] elay nos controles;
+- [PENDENTE] Delay nos controles;
 - [PENDENTE] Cobrinha, quando parada, não é desenhada em dois pontos como deveria;
 - [PENDENTE] Dois movimentos rápidos(para voltar), fazem o jogador perder a partida.
 
