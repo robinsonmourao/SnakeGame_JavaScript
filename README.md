@@ -1,6 +1,6 @@
-<h1 align="center">Calculadora_JuiceD</h1>
+<h1 align="center">Cobrinha_JuiceD</h1>
 
-<p align="center">Uma calculadora desenvolvida em JavaScript, CSS e HTML. Botões com tamanhos e cores confortáveis ao uso.</p>
+<p align="center">Jogo da cobrinha desenvolvida em JavaScript, CSS e HTML. Com marcador de pontos e melhores jogadores.</p>
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
@@ -10,8 +10,11 @@
 - [x] Movimentos;
 - [x] Mudança de tamanho;
 - [x] Contagem dos pontos;
+- [ ] Cronômetro;
 - [ ] Mudança de velocidade;
 - [ ] Ranking das melhores pontuações.
+- [ ] Sons.
+- [ ] Pause/resume game.
 
 ### Pré-requisitos
 
@@ -20,6 +23,17 @@ Você precisa fazer download do código [.ZIP](https://github.com/robinsonmourao
 <h1 align="center">
   <img alt="Snake Game JuiceD" src="./snake print.png" />
 </h1>
+
+### Bugs conhecidos
+
+- [RESOLVIDO] Cobrinha volta emcima dela mesma;
+- [PENDENTE] Score não permanece em Records;
+- [PENDENTE] Informação de perda de partida não salva nome e pontuação de jogador;
+- [PENDENTE] inputText de Records, mal alinhada;
+- [PENDENTE] Controle por W, A, S, D;
+- [PENDENTE] elay nos controles;
+- [PENDENTE] Cobrinha, quando parada, não é desenhada em dois pontos como deveria;
+- [PENDENTE] Dois movimentos rápidos(para voltar), fazem o jogador perder a partida.
 
 ### Autor
 
