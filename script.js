@@ -46,6 +46,7 @@ window.onload = function () {
 
         contexto.fillStyle = "yellow";//Pinta o food
         contexto.fillRect(foodX * tamanhoPonto, foodY * tamanhoPonto, tamanhoPonto - marginBlocos, tamanhoPonto - marginBlocos);
+        
         //--------------------------------------------- RENDER DA COBRINHA ----------------------------------------------------
         contexto.fillStyle = "white";//cor da cobra
         for (var i = 0; i < trail.length; i++) {//Rastro utilizado para colisões. deve deslizar conforme a cobra anda
