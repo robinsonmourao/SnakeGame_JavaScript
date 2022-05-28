@@ -15,10 +15,9 @@
 - [ ] Ranking das melhores pontuações.
 - [ ] Sons.
 - [ ] Pause/resume game.
+### Usar
 
-### Pré-requisitos
-
-Você precisa fazer download do código [.ZIP](https://github.com/robinsonmourao/Calculadora_JavaScript/archive/refs/heads/main.zip) e abrir com qualquer navegador(browser) por exemplo [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/download/thanks/).
+https://robinsonmourao.github.io/SnakeGame_JavaScript/
 
 <h1 align="center">
   <img alt="Snake Game JuiceD" src="./snake print.png" />
