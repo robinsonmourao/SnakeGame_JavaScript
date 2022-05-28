@@ -105,6 +105,7 @@ window.onload = function () {
 
         switch (event.keyCode) {
             case 37: // tecla left
+            case 65: // tecla A
                 //Esquerda somente se a cabeça já estiver indo pra cima ou pra baixo OU cauda igual a 2
                 if (velocidadeX == 0 && velocidadeY != 0 || cobrinhaParada()) {
                     velocidadeX = - velocidade;
@@ -112,6 +113,7 @@ window.onload = function () {
                 }
                 break;
             case 38: // tecla up
+            case 87: // W
                 //Cima somente se a cabeça já estiver indo para direita ou esquerda
                 if (velocidadeX != 0 && velocidadeY == 0 || cobrinhaParada()) {
                     velocidadeX = 0;
@@ -119,12 +121,14 @@ window.onload = function () {
                 }
                 break;
             case 39: // tecla right
+            case 68: // tecla D
                 if (velocidadeX == 0 && velocidadeY != 0 || cobrinhaParada()) {
                     velocidadeX = velocidade;
                     velocidadeY = 0;
                 }
                 break;
             case 40: //tecla down
+            case 83: // tecla S
                 if (velocidadeX != 0 && velocidadeY == 0 || cobrinhaParada()) {
                     velocidadeX = 0;
                     velocidadeY = velocidade;

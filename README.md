@@ -26,10 +26,10 @@ https://robinsonmourao.github.io/SnakeGame_JavaScript/
 ### Bugs conhecidos
 
 - [RESOLVIDO] Cobrinha volta emcima dela mesma;
+- [RESOLVIDO] Controle por W, A, S, D;
 - [PENDENTE] Score não permanece em Records;
 - [PENDENTE] Informação de perda de partida não salva nome e pontuação de jogador;
 - [PENDENTE] inputText de Records, mal alinhada;
-- [PENDENTE] Controle por W, A, S, D;
 - [PENDENTE] Delay nos controles;
 - [PENDENTE] Cobrinha, quando parada, não é desenhada em dois pontos como deveria;
 - [PENDENTE] Dois movimentos rápidos(para voltar), fazem o jogador perder a partida.
