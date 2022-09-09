@@ -42,3 +42,5 @@ Feito por Robinson Mourão 👋🏽
 <div>
   <a href = "mailto:bob.info.guaratiba@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> 
 </div><br>
+
+https://odesenvolvedor.com.br/tabela-de-key-codes-para-javascript_1464.html
