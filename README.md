@@ -2,10 +2,6 @@
 
 <p align="center">Jogo da cobrinha desenvolvida em JavaScript, CSS e HTML. Com marcador de pontos e melhores jogadores.</p>
 
-<h4 align="center"> 
-	🚧  Em construção...  🚧
-</h4>
-
 ### Recursos
 - [x] Movimentos;
 - [x] Mudança de tamanho;
